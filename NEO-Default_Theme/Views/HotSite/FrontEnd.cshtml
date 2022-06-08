@@ -1,0 +1,46 @@
+<div style="max-width: 1100px; margin:64px auto">
+
+        <button id="carregar-form" class="ui submit button" style="margin: 20px 0;"> Carregar Dados</button>
+
+    <form class="ui form" id="form-prova">
+        <div class="field required">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" required>
+            <span class="mostrador"></span>
+        </div>
+
+        <div class="field required">
+            <label for="mail">Email:</label>
+            <input type="email" id="mail"  placeholder="Seu e-mail" required>
+            <span class="mostrador"></span>
+
+        </div>
+
+        <div class="field required">        
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone"  name="telefone" placeholder="47-90000-0000" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
+                <span class="mostrador"></span>
+        </div>
+
+        <div class="field required">
+                <label>Assunto:</label>
+                <input id="assunto" type="text"  required>
+                <span class="mostrador"></span>
+        </div>
+
+        <div class="field required">
+            <label>Mensagem:<label>
+            <textarea id="mensagem"
+                    rows="5" cols="33" required >
+            </textarea>
+            <span class="mostrador"></span>
+        </div>
+
+        <button type="submit" class="ui submit button" id="enviar-form">Enviar Dados</button>
+       @* <button onclick="SalvarDados();" class="ui submit button">Salvar Dados </button> *@
+
+    </form>
+
+
+</div>
+

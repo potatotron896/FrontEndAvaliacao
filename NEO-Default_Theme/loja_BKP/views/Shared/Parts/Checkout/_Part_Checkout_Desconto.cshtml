@@ -1,0 +1,17 @@
+﻿@{
+    string _valueKey = "";
+
+    if (Session["DiscountKey"] != null)
+    {
+        _valueKey = Session["DiscountKey"].ToString();
+    }
+}
+<div class="ui form margin bottom small">
+    <div class="ui right labeled input blc-key">
+        <label>Cupom: </label>
+        <input type="text" name="key" id="key" placeholder="Cupom de Desconto" autocomplete="off" value="@_valueKey">
+        <a class="ui label" id="applyDiscount">
+            OK
+        </a>
+    </div>
+</div>
